@@ -15,7 +15,7 @@ const ChatWindow = () => {
     setInput('');
 
     try {
-      const res = await fetch('https://chatbot-clone-cvi80zjau-mohitsingh13s-projects.vercel.app//api/chat', {
+      const res = await fetch('https://chatbot-clone-cvi80zjau-mohitsingh13s-projects.vercel.app/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input }),
